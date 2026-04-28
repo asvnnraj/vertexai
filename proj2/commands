@@ -1,0 +1,6 @@
+pip3 install scikit-learn numpy
+pip3 install fastapi uvicorn
+
+python -m uvicorn api.server:app --reload
+
+open ui/index.html
