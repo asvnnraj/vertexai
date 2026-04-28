@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agentic AI Demo</title>
+</head>
+<body>
+    <h2>Payment Support Agent</h2>
+
+    <input id="input" placeholder="Ask something..." size="50"/>
+    <button onclick="send()">Send</button>
+
+    <pre id="chat"></pre>
+
+    <script>
+        async function send() {
+            const input = document.getElementById("input").value;
+
+            const res = await fetch("http://localhost:8000/chat", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({message: input})
+            });
+
+            const data = await res.json();
+
+            document.getElementById("chat").innerText +=
+                "\nUser: " + input + "\nAgent: " + data.response + "\n";
+        }
+    </script>
+</body>
+</html>
