@@ -1,0 +1,11 @@
+I tried to pay ₹1200 yesterday but it failed. I have enough balance now. What should I do next?
+
+My payment keeps failing with the same error. Should I retry now or contact my bank? - decision
+
+Are there known issues with banks blocking subscription payments? My payments keep failing. --> rag heavy
+
+My Netflix subscription payment failed twice this week. I have money in my account. What should I do?
+
+Can you analyze my recent failed payments and identify why this issue keeps happening? - investigation
+
+My subscription payment failed twice this week even though I have enough balance. What is going wrong and how can I fix it permanently?
